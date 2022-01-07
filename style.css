@@ -121,13 +121,15 @@ nav ul {
   text-decoration: underline;
   text-decoration-thickness: 0.5rem;
   padding:0;
+  margin-left: 2rem;
 }
 
 .locations-head h3 {
   padding-top: 3rem;
   padding:0;
+  margin-left: 2rem;
 }
-.cloud { 
+.cloud {  
   position: absolute;
   top: 0%;
   right: 0%;
