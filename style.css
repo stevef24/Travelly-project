@@ -99,7 +99,7 @@ nav ul {
 /* locations sections */
 #locations{
   min-height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5),transparent), url('img/new-york-page.png');
+  background: linear-gradient(rgba(0,0,0,0.7),transparent), url('img/new-york-page.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -145,6 +145,61 @@ nav ul {
   animation: cloudanimations 3s infinite;
 }
 
+/*Benefits section*/
+.benefits-head{
+background:#343c44;
+padding: 3rem;
+min-height:30vh;
+display: flex;
+justify-content: center;
+flex-flow: column nowrap;
+align-items: center;
+text-align: center;
+color: white;
+}
+
+.benefits-head h2 {
+  padding-bottom: 1rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 30vh;
+  flex-flow: row wrap;
+}
+
+.card{
+  background: white;
+  flex: 1 1 25rem; 
+  min-height: 40vh;
+  margin: 2rem 5rem;  
+  box-shadow: 0px 4px 15px;
+  border-radius: 4px;
+}
+.image{
+  background:#343c44;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.cards img{ 
+ max-width: 15%;
+ margin: 2rem;
+}
+
+.card h4 {
+  padding: 1rem; 
+  text-align: center;
+}
+
+.card p {
+  padding: 3rem;
+  text-align: center;
+}
+
+
 
 @keyframes cloudanimations {
 
@@ -171,5 +226,10 @@ nav ul {
   .logo {
     padding: 1rem;  
   }
+
+  .cards {
+    flex-flow: column wrap;
+  }
 }
+
 
