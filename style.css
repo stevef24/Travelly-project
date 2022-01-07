@@ -8,14 +8,18 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
   font-size: 2.6rem;
 }
 
-li, a, label, input, p {
+li,
+a,
+label,
+input,
+p {
   font-size: 2rem;
 }
 
@@ -26,13 +30,13 @@ h3 {
   font-size: 3rem;
   font-weight: normal;
 }
-h4, h5 {
+h4,
+h5 {
   font-size: 2.8rem;
 }
 a {
   color: white;
   text-decoration: none;
-
 }
 
 /* nav section */
@@ -61,18 +65,19 @@ nav ul {
 
 .logo {
   flex: 2 1 40rem;
-  font-family: 'Pattaya', sans-serif;
+  font-family: "Pattaya", sans-serif;
   font-weight: normal;
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5),transparent), url('img/landing-page.jpg');
-  min-height: 90vh; 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("img/landing-page.jpg");
+  min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color:white;
-  display:flex;
+  color: white;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -92,14 +97,15 @@ nav ul {
 }
 
 .booknow:hover {
-    color: black;
-    text-decoration: none;
-    background: white;
+  color: black;
+  text-decoration: none;
+  background: white;
 }
 /* locations sections */
-#locations{
+#locations {
   min-height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.7),transparent), url('img/new-york-page.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url("img/new-york-page.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -109,38 +115,37 @@ nav ul {
   color: white;
 }
 
-.locations-head{
+.locations-head {
   width: 90;
   margin: auto;
   display: flex;
   flex-flow: column nowrap;
-
 }
-.locations-head h2{
-  padding: 1rem 0rem; 
+.locations-head h2 {
+  padding: 1rem 0rem;
   text-decoration: underline;
   text-decoration-thickness: 0.5rem;
-  padding:0;
+  padding: 0;
   margin-left: 2rem;
 }
 
 .locations-head h3 {
   padding-top: 3rem;
-  padding:0;
+  padding: 0;
   margin-left: 2rem;
 }
-.cloud {  
+.cloud {
   position: absolute;
   top: 0%;
   right: 0%;
   height: 40rem;
   pointer-events: none;
 }
-.moving-cloud-1{
- opacity: 0.8;
- animation: cloudanimations 3s infinite;
+.moving-cloud-1 {
+  opacity: 0.8;
+  animation: cloudanimations 3s infinite;
 }
-.moving-cloud-2{
+.moving-cloud-2 {
   top: 20%;
   z-index: -1;
   opacity: 0.5;
@@ -148,16 +153,16 @@ nav ul {
 }
 
 /*Benefits section*/
-.benefits-head{
-background:#343c44;
-padding: 3rem;
-min-height:30vh;
-display: flex;
-justify-content: center;
-flex-flow: column nowrap;
-align-items: center;
-text-align: center;
-color: white;
+.benefits-head {
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
 
 .benefits-head h2 {
@@ -172,27 +177,27 @@ color: white;
   flex-flow: row wrap;
 }
 
-.card{
+.card {
   background: white;
-  flex: 1 1 25rem; 
+  flex: 1 1 25rem;
   min-height: 40vh;
-  margin: 2rem 5rem;  
+  margin: 2rem 5rem;
   box-shadow: 0px 4px 15px;
   border-radius: 4px;
 }
-.image{
-  background:#343c44;
+.image {
+  background: #343c44;
   display: flex;
   justify-content: center;
   align-content: center;
 }
-.cards img{ 
- max-width: 15%;
- margin: 2rem;
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
 }
 
 .card h4 {
-  padding: 1rem; 
+  padding: 1rem;
   text-align: center;
 }
 
@@ -201,11 +206,8 @@ color: white;
   text-align: center;
 }
 
-
-
 @keyframes cloudanimations {
-
-  from { 
+  from {
     transform: translate(10%, -10%);
   }
 
@@ -214,8 +216,53 @@ color: white;
   }
 }
 
-@media screen and (max-width:932px) {
-  
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url(/img/contact-mountain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  color: white;
+  border-radius: 4px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+footer {
+  color: white;
+  background: rgba(19, 28, 29, 1);
+}
+
+@media screen and (max-width: 932px) {
   html {
     font-size: 45%;
   }
@@ -226,12 +273,10 @@ color: white;
     text-align: center;
   }
   .logo {
-    padding: 1rem;  
+    padding: 1rem;
   }
 
   .cards {
     flex-flow: column wrap;
   }
 }
-
-
