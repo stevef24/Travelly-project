@@ -88,7 +88,7 @@ nav ul {
   padding: 5rem;
 }
 
-.booknow {
+.buttons {
   padding: 2rem;
   display: block;
   border: 2px solid white;
@@ -96,7 +96,20 @@ nav ul {
   transition: all 1s ease-in-out;
 }
 
-.booknow:hover {
+.buttons:hover {
+  color: black;
+  text-decoration: none;
+  background: white;
+}
+.buttons-2 {
+  padding: 0.5rem;
+  display: block;
+  border: 2px solid white;
+  border-radius: 16px;
+  transition: all 1s ease-in-out;
+}
+
+.buttons-2:hover {
   color: black;
   text-decoration: none;
   background: white;
@@ -260,6 +273,30 @@ nav ul {
 footer {
   color: white;
   background: rgba(19, 28, 29, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+.from-wrapper {
+  width: 100%;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 932px) {
